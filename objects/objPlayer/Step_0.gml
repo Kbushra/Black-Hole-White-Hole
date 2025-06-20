@@ -1,7 +1,9 @@
-if random(1) < 0.02 { instance_create_layer(x, y, "Instances", objParticle); }
+hMovement = lerp(hMovement, (global.r - global.l)*spd, 0.1);
+vMovement = lerp(vMovement, (global.d - global.u)*spd, 0.1);
 
-if random(1) < 0.01
-{
-	instance_create_layer(x + random_range(-391.5, 391.5), y + random_range(-192, 192),
-		"Instances", objAura);
-}
+x += hMovement;
+y += vMovement;
+x = clamp(x, 48, room_width - 48);
+y = clamp(y, 48, room_height - 48);
+
+global.energy -= (global.r || global.l) + (global.u || global.d);

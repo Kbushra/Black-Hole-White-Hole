@@ -5,7 +5,7 @@ y = camera_get_view_y(view_camera[0]);
 if image_index >= 3 && !swapped
 {
 	swapped = true;
-	if shader_current() == -1 { shader_set(shSwap); }
+	if shader_current() == -1 { shader_set(shLight); }
 	else { shader_reset(); }
 }
 
