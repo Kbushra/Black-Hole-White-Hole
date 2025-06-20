@@ -1,0 +1,21 @@
+C:/Users/WIN 11/Videos/Animations/ffmpeg/bin/ffmpeg.exe -hide_banner -y -y -r 12 -start_number 0 -start_number_range 1 -i C:/Users/WIN 11/Documents/Github projects/Gamemaker/Black Hole White Hole/frame%04d.png -i C:/Users/WIN 11/Documents/Github projects/Gamemaker/Black Hole White Hole/KritaTempPalettegen_%06d.png -lavfi [0:v][1:v]paletteuse=dither=sierra2_4a:diff_mode=none -f gif -loop 0 -gifflags +transdiff C:/Users/WIN 11/Documents/Github projects/Gamemaker/Black Hole White Hole/sprIntro.gif
+=====================================================
+Input #0, image2, from 'C:/Users/WIN 11/Documents/Github projects/Gamemaker/Black Hole White Hole/frame%04d.png':
+  Duration: 00:00:01.92, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgba(pc, gbr/unknown/unknown), 683x384 [SAR 3937:3937 DAR 683:384], 25 fps, 25 tbr, 25 tbn
+Input #1, image2, from 'C:/Users/WIN 11/Documents/Github projects/Gamemaker/Black Hole White Hole/KritaTempPalettegen_%06d.png':
+  Duration: 00:00:00.04, start: 0.000000, bitrate: N/A
+  Stream #1:0: Video: png, rgba(pc, gbr/unknown/unknown), 16x16 [SAR 1:1 DAR 1:1], 25 fps, 25 tbr, 25 tbn
+Stream mapping:
+  Stream #0:0 (png) -> paletteuse
+  Stream #1:0 (png) -> paletteuse
+  paletteuse:default -> Stream #0:0 (gif)
+Press [q] to stop, [?] for help
+Output #0, gif, to 'C:/Users/WIN 11/Documents/Github projects/Gamemaker/Black Hole White Hole/sprIntro.gif':
+  Metadata:
+    encoder         : Lavf61.1.100
+  Stream #0:0: Video: gif, pal8(pc, gbr/unknown/unknown, progressive), 683x384 [SAR 1:1 DAR 683:384], q=2-31, 200 kb/s, 12 fps, 100 tbn
+      Metadata:
+        encoder         : Lavc61.3.100 gif
+[out#0/gif @ 00000186f5cefbc0] video:6KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.352051%
+frame=   48 fps=0.0 q=-0.0 Lsize=       6KiB time=00:00:04.00 bitrate=  11.4kbits/s speed=11.1x    

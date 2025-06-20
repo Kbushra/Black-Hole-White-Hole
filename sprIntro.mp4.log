@@ -1,0 +1,31 @@
+C:/Users/WIN 11/Videos/Animations/ffmpeg/bin/ffmpeg.exe -hide_banner -y -y -r 12 -start_number 0 -start_number_range 1 -i C:/Users/WIN 11/Documents/Github projects/Gamemaker/Black Hole White Hole/frame%04d.png -vf scale=w=684:h=384:flags=bicubic -crf 23 -preset medium -profile:v baseline -pix_fmt yuv420p C:/Users/WIN 11/Documents/Github projects/Gamemaker/Black Hole White Hole/sprIntro.mp4
+=====================================================
+Input #0, image2, from 'C:/Users/WIN 11/Documents/Github projects/Gamemaker/Black Hole White Hole/frame%04d.png':
+  Duration: 00:00:01.92, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgba(pc, gbr/unknown/unknown), 683x384 [SAR 3937:3937 DAR 683:384], 25 fps, 25 tbr, 25 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 000002782fa6cbc0] using SAR=683/684
+[libx264 @ 000002782fa6cbc0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 000002782fa6cbc0] profile Constrained Baseline, level 2.2, 4:2:0, 8-bit
+[libx264 @ 000002782fa6cbc0] 264 - core 164 r3191 4613ac3 - H.264/MPEG-4 AVC codec - Copyleft 2003-2024 - http://www.videolan.org/x264.html - options: cabac=0 ref=3 deblock=1:0:0 analyse=0x1:0x111 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=0 weightp=0 keyint=250 keyint_min=12 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:/Users/WIN 11/Documents/Github projects/Gamemaker/Black Hole White Hole/sprIntro.mp4':
+  Metadata:
+    encoder         : Lavf61.1.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(progressive), 684x384 [SAR 683:684 DAR 683:384], q=2-31, 12 fps, 12288 tbn
+      Metadata:
+        encoder         : Lavc61.3.100 libx264
+      Side data:
+        cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/mp4 @ 000002782fa50d00] video:3KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 31.418312%
+frame=   48 fps=0.0 q=-1.0 Lsize=       4KiB time=00:00:04.00 bitrate=   8.8kbits/s speed=41.1x    
+[libx264 @ 000002782fa6cbc0] frame I:1     Avg QP: 9.43  size:  1695
+[libx264 @ 000002782fa6cbc0] frame P:47    Avg QP: 9.85  size:    22
+[libx264 @ 000002782fa6cbc0] mb I  I16..4: 95.3%  0.0%  4.7%
+[libx264 @ 000002782fa6cbc0] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  0.0%  0.0%  0.0%  0.0%  0.0%    skip:99.9%
+[libx264 @ 000002782fa6cbc0] coded y,uvDC,uvAC intra: 3.1% 0.0% 0.0% inter: 0.0% 0.0% 0.0%
+[libx264 @ 000002782fa6cbc0] i16 v,h,dc,p: 96%  0%  4%  0%
+[libx264 @ 000002782fa6cbc0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 41% 12% 30%  3%  1%  6%  1%  7%  0%
+[libx264 @ 000002782fa6cbc0] i8c dc,h,v,p: 100%  0%  0%  0%
+[libx264 @ 000002782fa6cbc0] kb/s:5.43
