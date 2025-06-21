@@ -1,4 +1,6 @@
-if shader_current() != -1 && stored
+depth = objPlayer.depth - 1;
+
+if global.swap && stored
 {
 	global.energy -= 40;
 	stored = false;
@@ -18,18 +20,18 @@ if !place_meeting(x, y, objTarget) || place_meeting(x, y, objPlayer)
 {
 	//Set speed
 	var dist = distance_to_point(objPlayer.x, objPlayer.y);
-	if dist != 0 && dist < 1024 { speed = 256 / dist; speed = clamp(speed, 0, 5); }
+	if dist != 0 && dist < 500 { speed = 256 / dist; speed = clamp(speed, 0, 5); }
 	else { speed = 0; }
 	
 	//Set dir
-	if shader_current() == -1 { direction = point_direction(x, y, objPlayer.x, objPlayer.y); }
+	if !global.swap { direction = point_direction(x, y, objPlayer.x, objPlayer.y); }
 	else { direction = point_direction(x, y, objPlayer.x, objPlayer.y) + 180; }
 }
 else { speed = lerp(speed, 0, 0.1); }
 
 if place_meeting(x, y, objPlayer)
 {
-	if shader_current() == -1
+	if !global.swap
 	{
 		if !stored { global.energy += 40; }
 		stored = true;

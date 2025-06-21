@@ -10,8 +10,8 @@
   "name":"objStar",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Detail",
+    "path":"folders/Objects/Detail.yy",
   },
   "parentObjectId":null,
   "persistent":false,

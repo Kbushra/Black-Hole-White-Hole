@@ -1,0 +1,1 @@
+if instance_exists(objMarker) { image_index = 1; }
