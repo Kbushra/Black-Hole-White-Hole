@@ -9,6 +9,7 @@ if keyboard_check_pressed(ord("E")) && !instance_exists(objMarker)
 {
 	instance_create_layer(objPlayer.x, objPlayer.y, "Instances", objMarker);
 	instance_create_layer(x, y, "Instances", objPointer);
+	audio_play_sound(sndClick, 10, false);
 }
 
 if keyboard_check_pressed(ord("Q")) { global.markerVisible = !global.markerVisible; }

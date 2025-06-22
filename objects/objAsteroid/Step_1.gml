@@ -1,7 +1,10 @@
 depth = objPlayer.depth - 1;
 
+if global.gameEnd { instance_destroy(); exit; }
+
 if global.swap && stored
 {
+	audio_play_sound(sndSpit, 10, false);
 	global.energy -= 40;
 	stored = false;
 	image_alpha = 1;
@@ -34,7 +37,12 @@ if place_meeting(x, y, objPlayer)
 {
 	if !global.swap
 	{
-		if !stored { global.energy += 40; }
+		if !stored
+		{
+			audio_play_sound(sndEat, 10, false);
+			global.energy += 40;
+			if !global.tutorial[0] { instance_create_layer(x, y, "Instances", objConsumeTutorial); }
+		}
 		stored = true;
 		x = lerp(x, objPlayer.x, 0.2);
 		y = lerp(y, objPlayer.y, 0.2);

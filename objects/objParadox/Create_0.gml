@@ -6,3 +6,5 @@ global.pause = true;
 
 ended = false;
 alarm[0] = 180;
+
+audio_play_sound(sndParadox, 10, false);

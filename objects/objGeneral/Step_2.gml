@@ -7,3 +7,5 @@ camera_set_view_pos(view_camera[0], lerpX, lerpY);
 
 if global.energy <= 0 { instance_create_layer(x, y, "Instances", objLinkBreak); }
 global.energy = clamp(global.energy, 0, global.maxEnergy);
+
+if global.energy <= 1000 && !global.tutorial[2] { instance_create_layer(x, y, "Instances", objEnergyTutorial); }

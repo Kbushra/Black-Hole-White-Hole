@@ -8,7 +8,7 @@ if mouse_check_button_pressed(mb_left) && global.materials - reqMats >= 0
 	{	
 		case 0:
 			global.energyDiminish -= 20;
-			global.energyWalkMult *= 1.2;
+			global.energyWalkMult *= 1.3;
 			break;
 		
 		case 1:
@@ -29,4 +29,5 @@ if mouse_check_button_pressed(mb_left) && global.materials - reqMats >= 0
 	}
 	
 	global.materials -= reqMats;
+	audio_play_sound(sndPurchase, 10, false);
 }

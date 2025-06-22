@@ -6,3 +6,5 @@ global.pause = true;
 
 ended = false;
 alarm[0] = 120;
+
+played = false;

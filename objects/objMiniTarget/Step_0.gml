@@ -17,8 +17,12 @@ if counter >= required
 		if required <= 0 { break; }
 	}
 	
+	if !global.tutorial[1]
+	{ instance_create_layer(x, y, "Instances", objMaterialTutorial); }
+	
 	global.materials++;
 	global.deleters++;
+	audio_play_sound(sndDing, 10, false);
 	instance_create_layer(x, y, "Instances", objTargetComplete);
 	instance_destroy();
 }

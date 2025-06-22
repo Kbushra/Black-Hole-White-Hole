@@ -8,3 +8,6 @@ global.pause = true;
 image_speed = 0;
 visible = false;
 alarm[0] = 60;
+
+played[0] = false;
+played[1] = false;

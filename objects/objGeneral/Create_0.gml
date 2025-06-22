@@ -1,11 +1,15 @@
 randomise();
 
-if os_browser != browser_not_a_browser { window_set_size(1366, 768); }
+if os_browser != browser_not_a_browser
+{
+	window_set_size(1366, 768);
+	audio_master_gain(0.4);
+}
 
 for (var i = 0; i < 500; i++)
 { instance_create_layer(random(room_width), random(room_height), "Stars", objStar); }
 
-global.maxEnergy = 5000;
+global.maxEnergy = 6000;
 global.energy = global.maxEnergy;
 
 global.swap = false;
@@ -13,6 +17,11 @@ global.swap = false;
 global.pause = false;
 
 ini_open("BW Hole");
+
+global.tutorial[0] = ini_read_real("Tutorials", "Tutorial 1", false);
+global.tutorial[1] = ini_read_real("Tutorials", "Tutorial 2", false);
+global.tutorial[2] = ini_read_real("Tutorials", "Tutorial 3", false);
+global.tutorial[3] = ini_read_real("Tutorials", "Tutorial 4", false);
 
 global.endingGot[0] = ini_read_real("Endings", "Ending 1", false);
 global.endingGot[1] = ini_read_real("Endings", "Ending 2", false);
