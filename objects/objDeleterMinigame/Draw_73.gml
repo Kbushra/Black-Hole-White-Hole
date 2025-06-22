@@ -1,5 +1,7 @@
 depth = -999900;
 
+if global.gameEnd { instance_destroy(); exit; }
+
 draw_sprite_ext(sprWhite, 0, 0, 0, 500, 500, 0, c_black, 0.6);
 
 x = camera_get_view_x(view_camera[0]) + 341.5;

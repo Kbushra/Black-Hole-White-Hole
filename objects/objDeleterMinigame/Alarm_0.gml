@@ -6,5 +6,7 @@ if progress >= 0
 	instance_destroy(target);
 	global.deleters--;
 }
-instance_destroy();
+
+global.pause = false;
 instance_activate_all();
+instance_destroy();

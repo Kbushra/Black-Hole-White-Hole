@@ -23,3 +23,6 @@ if !differentCol
 	}
 }
 else { if place_meeting(x, y, objPlayer) { instance_create_layer(x, y, "Instances", objParadox); } }
+
+x = clamp(x, 48, room_width - 48);
+y = clamp(y, 48, room_height - 48);

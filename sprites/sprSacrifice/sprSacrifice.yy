@@ -28,6 +28,7 @@
     {"$GMSpriteFrame":"","%Name":"233b15dd-bb91-4545-b20d-cc2aafdb8bb6","name":"233b15dd-bb91-4545-b20d-cc2aafdb8bb6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"a3ccdee3-a47b-434a-873e-c054eb977a89","name":"a3ccdee3-a47b-434a-873e-c054eb977a89","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"30476cfc-1bcd-49c2-9a78-c900770c6641","name":"30476cfc-1bcd-49c2-9a78-c900770c6641","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"fb23bb5e-9f10-4dbe-a3ec-5115856ce33e","name":"fb23bb5e-9f10-4dbe-a3ec-5115856ce33e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -64,7 +65,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":35.0,
+    "length":40.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -132,7 +133,10 @@
               },"Disabled":false,"id":"b3588891-190f-4aed-b1b8-194ca28e3e0d","IsCreationKey":false,"Key":33.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"30476cfc-1bcd-49c2-9a78-c900770c6641","path":"sprites/sprSacrifice/sprSacrifice.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2cba0e8b-0ee7-4a58-882a-1a0a898ae2fb","IsCreationKey":false,"Key":34.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"2cba0e8b-0ee7-4a58-882a-1a0a898ae2fb","IsCreationKey":false,"Key":34.0,"Length":5.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fb23bb5e-9f10-4dbe-a3ec-5115856ce33e","path":"sprites/sprSacrifice/sprSacrifice.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"fc02055b-c00e-4661-afd6-b02cdef18d14","IsCreationKey":false,"Key":39.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

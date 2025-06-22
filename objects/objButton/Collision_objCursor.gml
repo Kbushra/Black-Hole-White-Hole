@@ -22,6 +22,10 @@ if mouse_check_button_pressed(mb_left) && global.materials - reqMats >= 0
 			objShop.offer[2] = "";
 			visible = false;
 			break;
+		
+		case 3:
+			game_restart();
+			break;
 	}
 	
 	global.materials -= reqMats;

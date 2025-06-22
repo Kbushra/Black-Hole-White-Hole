@@ -1,3 +1,6 @@
+if global.pause { instance_destroy(); }
+global.pause = true;
+
 progress = -192;
 alarm[0] = 180;
 instance_deactivate_object(objEnergyBar);

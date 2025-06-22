@@ -19,5 +19,6 @@ if counter >= required
 	
 	global.materials++;
 	global.deleters++;
+	instance_create_layer(x, y, "Instances", objTargetComplete);
 	instance_destroy();
 }
