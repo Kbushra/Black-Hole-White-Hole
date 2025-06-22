@@ -1,4 +1,4 @@
-if !global.pause && random(1) < 0.02 { instance_create_layer(x, y, "Instances", objParticle); }
+if random(1) < 0.02 { instance_create_layer(x, y, "Instances", objParticle); }
 
 if random(1) < 0.01
 {

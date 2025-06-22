@@ -25,5 +25,12 @@ global.endingName[4] = global.endingGot[4] ? "Sacrifice" : "???";
 global.markerVisible = true;
 
 global.materials = 0;
+global.deleters = 2;
+global.pull = 1;
+global.energyDiminish = -1;
+global.energyWalkMult = 1;
+global.spd = 5;
 
 application_surface_draw_enable(false);
+
+instance_create_layer(x, y, "Instances", objIntro);

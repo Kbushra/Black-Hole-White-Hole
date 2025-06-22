@@ -13,10 +13,11 @@ if counter >= required
 	for (var i = 0; i < ds_list_size(collList); i++)
 	{
 		instance_destroy(collList[| i]);
-		counter--;
-		if counter <= 0 { break; }
+		required--;
+		if required <= 0 { break; }
 	}
 	
 	global.materials++;
+	global.deleters++;
 	instance_destroy();
 }

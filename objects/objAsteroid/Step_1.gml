@@ -20,7 +20,8 @@ if !place_meeting(x, y, objTarget) || place_meeting(x, y, objPlayer)
 {
 	//Set speed
 	var dist = distance_to_point(objPlayer.x, objPlayer.y);
-	if dist != 0 && dist < 500 { speed = 256 / dist; speed = clamp(speed, 0, 5); }
+	var pull = global.swap ? 1 : global.pull;
+	if dist != 0 && dist < 500 { speed = 256*pull / dist; speed = clamp(speed, 0, 5*pull); }
 	else { speed = 0; }
 	
 	//Set dir

@@ -4,3 +4,6 @@ var lerpX = lerp(camera_get_view_x(view_camera[0]), clampX, 0.2);
 var lerpY = lerp(camera_get_view_y(view_camera[0]), clampY, 0.2);
 
 camera_set_view_pos(view_camera[0], lerpX, lerpY);
+
+if global.energy <= 0 { instance_create_layer(x, y, "Instances", objLinkBreak); }
+global.energy = clamp(global.energy, 0, global.maxEnergy);
