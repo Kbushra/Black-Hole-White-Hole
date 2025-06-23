@@ -48,6 +48,8 @@ global.energyDiminish = -2;
 global.energyWalkMult = 1;
 global.spd = 5;
 
+global.mus = -1;
+
 application_surface_draw_enable(false);
 
 instance_create_layer(x, y, "Instances", objIntro);

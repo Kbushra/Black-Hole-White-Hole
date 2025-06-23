@@ -28,6 +28,7 @@ if image_index > 45 && !memo && !instance_exists(objTextBox)
 	{
 		instance_activate_all();
 		instance_deactivate_object(objEnergyBar);
+		global.mus = audio_play_sound(musBlack, 10, false);
 		
 		flag++;
 		instance_create_layer(x + 341.5, y + 192, "Instances", objTextBox,
@@ -35,9 +36,10 @@ if image_index > 45 && !memo && !instance_exists(objTextBox)
 	}
 	else if flag == 3 && delay <= 0
 	{
+		if global.tutorial[1] { var extra = "\nI to toggle inventory\nRight click to delete if possible"; } else { var extra = ""; }
 		flag++;
 		instance_create_layer(x + 341.5, y + 192, "Instances", objTextBox,
-			{ text: "WASD/Arrows to move\nSpace to swap holes\nQ to toggle pointers\nE to place/move marker\nLeft click objects for\nmore info", origin: id, big: true });
+			{ text: $"WASD/Arrows to move\nSpace to swap holes\nQ to toggle pointers\nE to place/move marker{extra}\nLeft click objects for more info", origin: id, big: true });
 	}
 	else if flag == 4
 	{	
