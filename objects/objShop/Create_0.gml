@@ -10,7 +10,7 @@ button[0] = instance_create_layer(x, y - 64, "Instances", objButton, { effect: 0
 button[1] = instance_create_layer(x, y + 32, "Instances", objButton, { effect: 1, reqMats: 1 });
 button[2] = instance_create_layer(x, y + 128, "Instances", objButton, { effect: 2, reqMats: 2 });
 
-offer[0] = "Slow N Steady (1 MAT)\nExtra 20kJ regen, 1.3x walk energy";
+offer[0] = "Slow N Steady (1 MAT)\nExtra 20kJ regen, 1.45x walk energy";
 offer[1] = "Shortest Path (1 MAT)\n1.25x speed, 1.25x walk energy";
 offer[2] = "Magnet (2 MAT) (ONE TIME)\nTwice the gravity, extra -30kJ regen";
 

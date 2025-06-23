@@ -9,7 +9,7 @@ if !instance_exists(objTextBox)
 	{
 		flag++;
 		instance_create_layer(x + 341.5, y + 192, "Instances", objTextBox,
-			{ text: "After deleting a hole,\nyou can use their asteroids\nfor yourself!.", origin: id });
+			{ text: "After deleting a hole,\nyou can use their asteroids\nfor yourself!", origin: id });
 	}
 	else if flag == 1
 	{	

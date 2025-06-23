@@ -22,6 +22,7 @@ if counter >= required
 	
 	global.materials++;
 	global.deleters++;
+	global.energy += 200;
 	audio_play_sound(sndDing, 10, false);
 	instance_create_layer(x, y, "Instances", objTargetComplete);
 	instance_destroy();

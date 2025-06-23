@@ -3,10 +3,11 @@ if keyboard_check_pressed(vk_f4) { window_set_fullscreen(!window_get_fullscreen(
 if global.pause { exit; }
 
 if keyboard_check_pressed(vk_space)
-{ instance_create_layer(x, y, "Instances", objTransition); global.energy -= 30; }
+{ instance_create_layer(x, y, "Instances", objTransition); global.energy -= 70; }
 
 if keyboard_check_pressed(ord("E")) && !instance_exists(objMarker)
 {
+	global.energy -= 100;
 	instance_create_layer(objPlayer.x, objPlayer.y, "Instances", objMarker);
 	instance_create_layer(x, y, "Instances", objPointer);
 	audio_play_sound(sndClick, 10, false);

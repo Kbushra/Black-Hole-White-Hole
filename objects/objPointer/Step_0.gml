@@ -1,3 +1,5 @@
+if !instance_exists(objTarget) { instance_destroy(); exit; }
+
 visible = global.markerVisible;
 
 x = objPlayer.x;

@@ -1,5 +1,6 @@
 randomise();
 
+audio_master_gain(0);
 if os_browser != browser_not_a_browser
 {
 	window_set_size(1366, 768);
@@ -22,6 +23,7 @@ global.tutorial[0] = ini_read_real("Tutorials", "Tutorial 1", false);
 global.tutorial[1] = ini_read_real("Tutorials", "Tutorial 2", false);
 global.tutorial[2] = ini_read_real("Tutorials", "Tutorial 3", false);
 global.tutorial[3] = ini_read_real("Tutorials", "Tutorial 4", false);
+global.tutorial[4] = ini_read_real("Tutorials", "Tutorial 5", false);
 
 global.endingGot[0] = ini_read_real("Endings", "Ending 1", false);
 global.endingGot[1] = ini_read_real("Endings", "Ending 2", false);

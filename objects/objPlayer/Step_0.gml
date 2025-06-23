@@ -2,8 +2,9 @@ if global.pause { exit; }
 visible = true;
 
 var colourMult = global.swap ? 1.5 : 1;
-hMovement = lerp(hMovement, (global.r - global.l)*global.spd*colourMult, 0.1);
-vMovement = lerp(vMovement, (global.d - global.u)*global.spd*colourMult, 0.1);
+var radioMult = place_meeting(x, y, objRadioactive) ? 0.6 : 1;
+hMovement = lerp(hMovement, (global.r - global.l)*global.spd*colourMult*radioMult, 0.1);
+vMovement = lerp(vMovement, (global.d - global.u)*global.spd*colourMult*radioMult, 0.1);
 
 x += hMovement;
 y += vMovement;
