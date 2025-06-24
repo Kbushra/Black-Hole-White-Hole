@@ -1,2 +1,2 @@
 counter = 0;
-required = 1;
+required = 10;

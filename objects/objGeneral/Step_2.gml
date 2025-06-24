@@ -17,6 +17,7 @@ ini_write_real("Tutorials", "Tutorial 2", global.tutorial[1]);
 ini_write_real("Tutorials", "Tutorial 3", global.tutorial[2]);
 ini_write_real("Tutorials", "Tutorial 4", global.tutorial[3]);
 ini_write_real("Tutorials", "Tutorial 5", global.tutorial[4]);
+ini_write_real("Tutorials", "Tutorial 6", global.tutorial[5]);
 
 ini_write_real("Endings", "Ending 1", global.endingGot[0]);
 ini_write_real("Endings", "Ending 2", global.endingGot[1]);

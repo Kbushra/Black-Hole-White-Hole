@@ -1,6 +1,5 @@
 global.pause = true;
-instance_deactivate_object(objEnergyBar);
-instance_deactivate_object(objAsteroid);
+deactivate();
 
 memo = false;
 flag = 0;

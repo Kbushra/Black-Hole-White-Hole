@@ -10,7 +10,7 @@ if progress >= 0
 	audio_play_sound(sndBlast, 10, false);
 }
 
-global.energy -= 300;
+global.energy -= 400;
 global.pause = false;
 instance_activate_all();
 instance_destroy();

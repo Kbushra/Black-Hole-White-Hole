@@ -45,8 +45,8 @@
   },
   "origin":4,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Progression",
+    "path":"folders/Sprites/Progression.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

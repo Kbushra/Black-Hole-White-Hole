@@ -15,7 +15,7 @@ if !memo && !instance_exists(objTextBox)
 	{
 		flag++;
 		instance_create_layer(x + 341.5, y + 192, "Instances", objTextBox,
-			{ text: "Every material you get also\ngives a free deleter, which\ncan delete other black holes.\nRight click to use one for 300kJ.", origin: id });
+			{ text: "Every material you get also\ngives a free deleter, which\ncan delete other black holes.\nRight click to use one for 400kJ.", origin: id });
 	}
 	else if flag == 2
 	{	

@@ -4,12 +4,19 @@ if global.gameEnd { instance_destroy(); exit; }
 
 if global.swap && stored
 {
-	audio_play_sound(sndSpit, 10, false);
-	global.energy -= 40;
 	stored = false;
 	image_alpha = 1;
 	x = objPlayer.x;
 	y = objPlayer.y;
+	audio_play_sound(sndSpit, 10, false);
+	
+	if !fragile { global.energy -= 100; }
+	else
+	{
+		global.energy -= 200;
+		instance_create_layer(x, y, "Instances", objAsterDust);
+		instance_destroy();
+	}
 }
 
 //Keep in room
@@ -40,8 +47,9 @@ if place_meeting(x, y, objPlayer)
 		if !stored
 		{
 			audio_play_sound(sndEat, 10, false);
-			global.energy += 40;
-			if !global.tutorial[0] { instance_create_layer(x, y, "Instances", objConsumeTutorial); }
+			if !fragile { global.energy += 100; }
+			if !global.tutorial[0] && !fragile { instance_create_layer(x, y, "Instances", objConsumeTutorial); }
+			if !global.tutorial[5] && fragile { instance_create_layer(x, y, "Instances", objFragileTutorial); }
 		}
 		stored = true;
 		x = lerp(x, objPlayer.x, 0.2);
