@@ -8,17 +8,17 @@ if mouse_check_button_pressed(mb_left) && global.materials - reqMats >= 0
 	{	
 		case 0:
 			global.energyDiminish -= 20;
-			global.energyWalkMult *= 1.6;
+			global.walkEnergy += 40;
 			break;
 		
 		case 1:
 			global.spd *= 1.25;
-			global.energyWalkMult *= 1.25;
+			global.walkEnergy += 20;
 			break;
 			
 		case 2:
-			global.pull = 2;
-			global.energyDiminish += 30;
+			global.walkEnergy -= 140;
+			global.diminAddOn = 1000;
 			objShop.offer[2] = "";
 			visible = false;
 			break;

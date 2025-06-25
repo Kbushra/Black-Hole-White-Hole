@@ -47,7 +47,8 @@ global.materials = 0;
 global.deleters = 0;
 global.pull = 1;
 global.energyDiminish = -2;
-global.energyWalkMult = 1;
+global.diminAddOn = 0;
+global.walkEnergy = 60;
 global.spd = 5;
 
 global.mus = -1;

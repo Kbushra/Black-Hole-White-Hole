@@ -23,4 +23,5 @@ global.l = keyboard_check(vk_left) || keyboard_check(ord("A"));
 global.u = keyboard_check(vk_up) || keyboard_check(ord("W")); 
 global.d = keyboard_check(vk_down) || keyboard_check(ord("S"));
 
-global.energy -= global.energyDiminish/60;
+if global.l || global.r || global.u || global.d { global.energy -= global.energyDiminish/60; }
+else { global.energy -= (global.energyDiminish + global.diminAddOn)/60; }

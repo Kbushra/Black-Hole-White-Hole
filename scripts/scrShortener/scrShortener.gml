@@ -2,8 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function deactivate()
 {
-	instance_deactivate_object(objEnergyBar);
-	instance_deactivate_object(objAsteroid);
-	instance_deactivate_object(objAsterDust);
-	instance_deactivate_object(objOtherHole);
+	with(objEnergyBar) { instance_deactivate_object(id); }
+	with(objAsteroid) { instance_deactivate_object(id); }
+	with(objAsterDust) { instance_deactivate_object(id); }
+	with(objOtherHole) { instance_deactivate_object(id); }
 }
